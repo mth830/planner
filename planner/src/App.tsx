@@ -1,6 +1,7 @@
 //import { useState } from 'react'
 //import {Profile} from './components/profile'
-import { Login } from './components/login'
+//import { Login } from './components/login'
+import { PlanningBoard } from './components/PlanningBoard'
 import './App.css'
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
     <>
     {/* <Profile profileImage={testUser.profileImage} email={testUser.email} userAlias={testUser.userAlias}>
     </Profile> */}
-    <Login></Login>
+    {/* <Login></Login> */}
+    <PlanningBoard></PlanningBoard>
     </>
   )
 }
