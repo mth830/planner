@@ -60,14 +60,14 @@ export const PlanningBoard = () => {
   const handleDrag = (event: React.DragEvent) => {
 
     const { clientX, clientY } = event;
-    console.log(event.targetg)
+    console.log(event.target)
     const id = event.target.id;
 
     updateUserPosition(clientX, clientY, +id);
   };
-  return (
+  return (<>
+    <div >{eventItem.title}</div>
     <div id="PlanningBoard" style={{minHeight:500,minWidth:500}}>
-      <div >{eventItem.title}</div>
       <div style={{ position: "absolute" }}>
         {eventItem.deployedUsers.map(({ name, x, y, id }) => (
           <div
@@ -89,5 +89,6 @@ export const PlanningBoard = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
