@@ -50,7 +50,7 @@ export const PlanningBoard = () => {
   };
   return (
     <>
-      <div title={a.toString()}>{eventItem.title}</div>
+      <div >{eventItem.title}</div>
       <div style={{ position: "absolute" }}>
         {eventItem.deployedUsers.map(({ name, x, y, id }, i) => (
           <div
